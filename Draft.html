@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let year = parseInt(prompt('Enter year ='));
+  let isLeapYear = false;
+  let isLeapYearBy4 = year % 4 ==0;
+  if (isLeapYearBy4) {
+      let isLeapYearBy100 = year % 100 ==0;
+      if (isLeapYearBy100) {
+          let isLeapYearBy400 = year % 400==0;
+          if (isLeapYearBy400) {
+              isLeapYear = true;
+          } else {
+              isLeapYear = false;
+          }
+
+      } else{
+          isLeapYear = true;
+      }
+  } else {
+      isLeapYear = false;
+  }
+  if (isLeapYear) {
+      alert('La nam Nhuan')
+  } else {
+      alert('La nam khong Nhuan')
+  }
+</script>
+</body>
+</html>

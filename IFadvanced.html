@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdvanceIf</title>
+</head>
+<body>
+<script>
+  let tenDangNhap = prompt("Enter your account\'s name");
+  if (tenDangNhap=='Admin'){
+    let passWord = prompt('Enter the password');
+    if (passWord == 'The Master'){
+      document.write('Welcome')
+    } else if (passWord == ''){
+      confirm('cancelled')
+    } else {
+      document.write('Wrong password')
+    }
+  } else if(tenDangNhap == '') {
+    confirm('cancelled')
+  } else {
+    document.write('I don\'t you')
+  }
+</script>
+</body>
+</html>
